@@ -7,3 +7,5 @@ if image is None:
 
 else:
     gray=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)#convert to gray
+    if gray is None:
+        print("Could not convert to gray.")
