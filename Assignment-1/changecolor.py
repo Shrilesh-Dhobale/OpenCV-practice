@@ -16,3 +16,9 @@ else:
         select=int(input("Enter your choice: "))
         if select==1:
             cv2.imwrite('gray_image.jpg',gray)#save the gray image
+            print("Gray image saved successfully.")
+        elif select==2:
+            cv2.imshow("gray_image", gray)
+            cv2.waitKey(0)
+            cv2.destroyAllWindows()
+            print("Exiting without saving.")
