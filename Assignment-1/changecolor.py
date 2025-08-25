@@ -22,3 +22,5 @@ else:
             cv2.waitKey(0)
             cv2.destroyAllWindows()
             print("Exiting without saving.")
+        else:
+            print("Invalid choice. Exiting without saving.")
