@@ -14,3 +14,5 @@ else:
         print("Press 1 to save the gray image.")
         print("Press 2 to exit without saving.")
         select=int(input("Enter your choice: "))
+        if select==1:
+            cv2.imwrite('gray_image.jpg',gray)#save the gray image
