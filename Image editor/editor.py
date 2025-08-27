@@ -61,3 +61,5 @@ elif operation == '6':
     # Exit
     print("Exiting the Image Editor.")
     cv2.destroyAllWindows()
+else:
+    print("Invalid operation selected.")
