@@ -34,3 +34,10 @@ elif operation == '2':
     cv2.imshow("Rotated Image", rotated_image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+elif operation == '3':
+    # Flip the image
+    flip_code = int(input("Enter flip code (0: x-axis, 1: y-axis, -1: both): "))
+    flipped_image = cv2.flip(image, flip_code)
+    cv2.imshow("Flipped Image", flipped_image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
