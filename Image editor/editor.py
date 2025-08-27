@@ -24,3 +24,13 @@ if operation == '1':
     cv2.imshow("Resized Image", resized_image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+elif operation == '2':
+    # Rotate the image
+    angle = int(input("Enter rotation angle (in degrees): "))
+    (h, w) = image.shape[:2]
+    center = (w // 2, h // 2)
+    M = cv2.getRotationMatrix2D(center, angle, 1.0)
+    rotated_image = cv2.warpAffine(image, M, (w, h))
+    cv2.imshow("Rotated Image", rotated_image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
