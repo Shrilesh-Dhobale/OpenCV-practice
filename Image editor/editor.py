@@ -16,3 +16,11 @@ print("1. Resize\n2. Rotate\n3. Flip\n4. Convert to Grayscale\n5. Crop\n6. Flip"
 
 operation = input("Enter the number of the operation you want to perform: ")
 
+if operation == '1':
+    # Resize the image
+    new_width = int(input("Enter new width: "))
+    new_height = int(input("Enter new height: "))
+    resized_image = cv2.resize(image, (new_width, new_height))
+    cv2.imshow("Resized Image", resized_image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
