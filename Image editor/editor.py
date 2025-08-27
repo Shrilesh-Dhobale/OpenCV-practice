@@ -12,7 +12,7 @@ else:
     cv2.destroyAllWindows()
 
 print("Choose operation to perform on image")
-print("1. Resize\n2. Rotate\n3. Flip\n4. Convert to Grayscale\n5. Crop\n6. Flip")
+print("1. Resize\n2. Rotate\n3. Flip\n4. Convert to Grayscale\n5. Crop\n6. Exit")
 
 operation = input("Enter the number of the operation you want to perform: ")
 
@@ -45,5 +45,15 @@ elif operation == '4':
     # Convert to Grayscale
     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     cv2.imshow("Grayscale Image", gray_image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+elif operation == '5':
+    # Crop the image
+    x = int(input("Enter x coordinate of top-left corner: "))
+    y = int(input("Enter y coordinate of top-left corner: "))
+    w = int(input("Enter width of the crop area: "))
+    h = int(input("Enter height of the crop area: "))
+    cropped_image = image[y:y+h, x:x+w]
+    cv2.imshow("Cropped Image", cropped_image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
