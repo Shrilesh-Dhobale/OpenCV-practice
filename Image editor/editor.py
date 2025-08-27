@@ -57,3 +57,7 @@ elif operation == '5':
     cv2.imshow("Cropped Image", cropped_image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+elif operation == '6':
+    # Exit
+    print("Exiting the Image Editor.")
+    cv2.destroyAllWindows()
