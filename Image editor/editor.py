@@ -10,3 +10,6 @@ else:
     cv2.imshow("Loaded Image", image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
+print("Choose operation to perform on image")
+print("1. Resize\n2. Rotate\n3. Flip\n4. Convert to Grayscale\n5. Crop\n6. Flip")
