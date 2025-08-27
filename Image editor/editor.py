@@ -41,3 +41,9 @@ elif operation == '3':
     cv2.imshow("Flipped Image", flipped_image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+elif operation == '4':
+    # Convert to Grayscale
+    gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    cv2.imshow("Grayscale Image", gray_image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
