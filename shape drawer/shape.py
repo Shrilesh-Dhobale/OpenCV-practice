@@ -1,6 +1,9 @@
 import cv2
 
 print("~~~~~~~~~~~~~~Welcome to Shape Drawer~~~~~~~~~~~~~~")
+
+img=input("Enter image path: ")
+
 print("Press 1 to draw a rectangle")
 print("Press 2 to draw a circle")
 print("Press 3 to draw a line")
@@ -8,7 +11,7 @@ print("Press 4 to add text")
 print("Press 5 to exit")
 
 operation=input("Enter your choice: ")
-img=cv2.imread("lena.jpg")
+
 if operation=='1':
     pt1_x=int(input("Enter x coordinate of point 1: "))
     pt1_y=int(input("Enter y coordinate of point 1: "))
