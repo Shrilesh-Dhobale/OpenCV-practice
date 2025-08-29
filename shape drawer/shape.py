@@ -81,4 +81,5 @@ elif operation=='3':
     cv2.destroyAllWindows()
     print("Line drawn successfully!")
     print("1.To View\n2.To Save")
+    view_or_save=input("Enter your choice: ")
     
