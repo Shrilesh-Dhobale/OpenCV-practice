@@ -6,3 +6,5 @@ print("Press 2 to draw a circle")
 print("Press 3 to draw a line")
 print("Press 4 to add text")
 print("Press 5 to exit")
+
+operation=input("Enter your choice: ")
