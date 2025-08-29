@@ -28,3 +28,6 @@ if operation=='1':
     cv2.waitKey(0)
     cv2.destroyAllWindows()
     print("Rectangle drawn successfully!")
+    print("1.To View\n2.To Save")
+    view_or_save=input("Enter your choice: ")
+    
