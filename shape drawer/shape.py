@@ -92,5 +92,19 @@ elif operation=='3':
         print("Image saved successfully!")
     else:
         print("Invalid choice!")
-
+elif operation=='4':
+    text=input("Enter text to add: ")
+    org_x=int(input("Enter x coordinate of origin: "))
+    org_y=int(input("Enter y coordinate of origin: "))
+    color_b=int(input("Enter blue color value(0-255): "))
+    color_g=int(input("Enter green color value(0-255): "))
+    color_r=int(input("Enter red color value(0-255): "))
+    font_scale=float(input("Enter font scale (positive float): "))
+    thickness=int(input("Enter thickness value(positive integer): "))
+    img=cv2.putText(img,text,(org_x,org_y),(cv2.FONT_HERSHEY_SIMPLEX),font_scale,(color_b,color_g,color_r),thickness)
+    cv2.imshow("Image",img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+    print("Text added successfully!")
+    print("1.To View\n2.To Save")
     
