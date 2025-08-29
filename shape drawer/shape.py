@@ -40,4 +40,18 @@ if operation=='1':
         print("Image saved successfully!")
     else:
         print("Invalid choice!")
+elif operation=='2':
+    center_x=int(input("Enter x coordinate of center: "))
+    center_y=int(input("Enter y coordinate of center: "))
+    radius=int(input("Enter radius: "))
+    color_b=int(input("Enter blue color value(0-255): "))
+    color_g=int(input("Enter green color value(0-255): "))
+    color_r=int(input("Enter red color value(0-255): "))
+    thickness=int(input("Enter thickness value(positive integer): "))
+    img=cv2.circle(img,(center_x,center_y),radius,(color_b,color_g,color_r),thickness)
+    cv2.imshow("Image",img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+    print("Circle drawn successfully!")
+    print("1.To View\n2.To Save")
     
