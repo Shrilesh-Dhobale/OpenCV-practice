@@ -118,4 +118,7 @@ elif operation=='4':
         print("Image saved successfully!")
     else:
         print("Invalid choice!")
+elif operation=='5':
+    print("Exiting Shape Drawer. Goodbye!")
+    exit()
     
