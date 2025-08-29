@@ -66,5 +66,19 @@ elif operation=='2':
         print("Image saved successfully!")
     else:
         print("Invalid choice!")
-
+elif operation=='3':
+    pt1_x=int(input("Enter x coordinate of point 1: "))
+    pt1_y=int(input("Enter y coordinate of point 1: "))
+    pt2_x=int(input("Enter x coordinate of point 2: "))
+    pt2_y=int(input("Enter y coordinate of point 2: "))
+    color_b=int(input("Enter blue color value(0-255): "))
+    color_g=int(input("Enter green color value(0-255): "))
+    color_r=int(input("Enter red color value(0-255): "))
+    thickness=int(input("Enter thickness value(positive integer): "))
+    img=cv2.line(img,(pt1_x,pt1_y),(pt2_x,pt2_y),(color_b,color_g,color_r),thickness)
+    cv2.imshow("Image",img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+    print("Line drawn successfully!")
+    print("1.To View\n2.To Save")
     
