@@ -24,9 +24,7 @@ if operation=='1':
     color_r=int(input("Enter red color value(0-255): "))
     thickness=int(input("Enter thickness value(positive integer): "))
     img=cv2.rectangle(img,(pt1_x,pt1_y),(pt2_x,pt2_y),(color_b,color_g,color_r),thickness)
-    cv2.imshow("Image",img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+   
     print("Rectangle drawn successfully!")
     print("1.To View\n2.To Save")
     view_or_save=input("Enter your choice: ")
@@ -49,9 +47,7 @@ elif operation=='2':
     color_r=int(input("Enter red color value(0-255): "))
     thickness=int(input("Enter thickness value(positive integer): "))
     img=cv2.circle(img,(center_x,center_y),radius,(color_b,color_g,color_r),thickness)
-    cv2.imshow("Image",img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+   
     print("Circle drawn successfully!")
     print("1.To View\n2.To Save")
     view_or_save=input("Enter your choice: ")
@@ -76,9 +72,7 @@ elif operation=='3':
     color_r=int(input("Enter red color value(0-255): "))
     thickness=int(input("Enter thickness value(positive integer): "))
     img=cv2.line(img,(pt1_x,pt1_y),(pt2_x,pt2_y),(color_b,color_g,color_r),thickness)
-    cv2.imshow("Image",img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+   
     print("Line drawn successfully!")
     print("1.To View\n2.To Save")
     view_or_save=input("Enter your choice: ")
@@ -102,9 +96,7 @@ elif operation=='4':
     font_scale=float(input("Enter font scale (positive float): "))
     thickness=int(input("Enter thickness value(positive integer): "))
     img=cv2.putText(img,text,(org_x,org_y),(cv2.FONT_HERSHEY_SIMPLEX),font_scale,(color_b,color_g,color_r),thickness)
-    cv2.imshow("Image",img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+   
     print("Text added successfully!")
     print("1.To View\n2.To Save")
     view_or_save=input("Enter your choice: ")
