@@ -2,7 +2,8 @@ import cv2
 
 print("~~~~~~~~~~~~~~Welcome to Shape Drawer~~~~~~~~~~~~~~")
 
-img=input("Enter image path: ")
+select_img=input("Enter image path: ")
+
 
 print("Press 1 to draw a rectangle")
 print("Press 2 to draw a circle")
