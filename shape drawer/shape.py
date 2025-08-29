@@ -8,3 +8,4 @@ print("Press 4 to add text")
 print("Press 5 to exit")
 
 operation=input("Enter your choice: ")
+img=cv2.imread("lena.jpg")
