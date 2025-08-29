@@ -3,6 +3,7 @@ import cv2
 print("~~~~~~~~~~~~~~Welcome to Shape Drawer~~~~~~~~~~~~~~")
 
 select_img=input("Enter image path: ")
+img=cv2.imread(select_img)
 
 
 print("Press 1 to draw a rectangle")
