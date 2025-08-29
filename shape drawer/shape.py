@@ -108,4 +108,14 @@ elif operation=='4':
     print("Text added successfully!")
     print("1.To View\n2.To Save")
     view_or_save=input("Enter your choice: ")
+    if view_or_save=='1':
+        cv2.imshow("Image",img)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
+    elif view_or_save=='2':
+        save_path=input("Enter path to save image: ")
+        cv2.imwrite(save_path,img)
+        print("Image saved successfully!")
+    else:
+        print("Invalid choice!")
     
