@@ -121,4 +121,6 @@ elif operation=='4':
 elif operation=='5':
     print("Exiting Shape Drawer. Goodbye!")
     exit()
+else:
+    print("Invalid choice! Try again.")
     
