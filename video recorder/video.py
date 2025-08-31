@@ -24,3 +24,13 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('v'):
         cv2.imshow("Video", frame)
         print("Press 'q' to stop recording.")
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+            print("Recording stopped.")
+            print("Would you like to save the recording? (y/n)")
+            if cv2.waitKey(1) & 0xFF == ord('y'):
+                out.write(frame)
+                print("Recording saved.")
+            else:
+                print("Recording discarded.")
+    
