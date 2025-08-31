@@ -32,5 +32,8 @@ while True:
                 out.write(frame)
                 print("Recording saved.")
             else:
+                cv2.destroyAllWindows()
                 print("Recording discarded.")
-    
+    elif cv2.waitKey(1) & 0xFF == ord('s'):
+        out.write(frame)
+        print("Frame saved.")
