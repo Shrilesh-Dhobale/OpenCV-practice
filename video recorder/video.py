@@ -15,4 +15,5 @@ out=cv2.VideoWriter(output_file,codec,fps,(frame_width,frame_height))
 
 while True:
     ret, frame = camera.read()
-    
+    if not ret:
+        print("Failed to grab frame")
