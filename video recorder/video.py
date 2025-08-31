@@ -20,4 +20,6 @@ while True:
         break
     print("Recording... Press 'v' to view.")
     print("Press 's' to save.")
-    
+
+    if cv2.waitKey(1) & 0xFF == ord('v'):
+        cv2.imshow("Video", frame)
