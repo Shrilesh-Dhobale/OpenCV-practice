@@ -17,3 +17,7 @@ while True:
     ret, frame = camera.read()
     if not ret:
         print("Failed to grab frame")
+        break
+    print("Recording... Press 'v' to view.")
+    print("Press 's' to save.")
+    
