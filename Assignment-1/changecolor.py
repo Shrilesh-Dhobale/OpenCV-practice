@@ -1,6 +1,6 @@
 import cv2
 
-image=cv2.imread('img.jpg')#use to load img
+image=cv2.imread('./img.jpg')#use to load img
 
 if image is None:
     print("Could not read the image.")
