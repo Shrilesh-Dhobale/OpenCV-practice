@@ -19,7 +19,8 @@ while True:
         print("Failed to grab frame")
         break
     print("Recording... Press 'v' to view.")
-    print("Press 's' to save.")
+    print("Press 's' to save without viewing.")
 
     if cv2.waitKey(1) & 0xFF == ord('v'):
         cv2.imshow("Video", frame)
+        print("Press 'q' to stop recording.")
