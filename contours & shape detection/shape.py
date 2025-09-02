@@ -31,3 +31,5 @@ for contour in contours:
 
     else:
         shape_name="Unknown"
+
+    cv2.drawContours(img,[contour],0,(0,255,0),2)
