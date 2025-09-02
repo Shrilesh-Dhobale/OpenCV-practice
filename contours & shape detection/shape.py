@@ -22,3 +22,8 @@ for contour in contours:
             shape_name="Square"
         else:
             shape_name="Rectangle"
+
+    elif len_approx==5:
+        shape_name="Pentagon"
+
+    
