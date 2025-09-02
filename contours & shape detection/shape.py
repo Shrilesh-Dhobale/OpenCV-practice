@@ -12,4 +12,7 @@ cv2.drawContours(img,[contour],0,(0,255,0),2)
 for contour in contours:
     approx=cv2.approxPolyDP(contour,0.01*cv2.arcLength(contour,True),True)#Detect shape by corners
     len_approx=len(approx)
+
+    if len_approx==3:
+        shape_name="Triangle"
     
