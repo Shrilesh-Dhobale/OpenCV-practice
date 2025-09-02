@@ -35,3 +35,4 @@ for contour in contours:
     cv2.drawContours(img,[contour],0,(0,255,0),2)
     x=approx.ravel()[0]
     y=approx.ravel()[1]-10
+    cv2.putText(img,shape_name,(x,y),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,0,0),2)
