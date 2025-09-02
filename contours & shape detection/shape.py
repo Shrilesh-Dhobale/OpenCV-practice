@@ -33,3 +33,5 @@ for contour in contours:
         shape_name="Unknown"
 
     cv2.drawContours(img,[contour],0,(0,255,0),2)
+    x=approx.ravel()[0]
+    y=approx.ravel()[1]-10
