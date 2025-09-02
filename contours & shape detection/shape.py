@@ -15,4 +15,10 @@ for contour in contours:
 
     if len_approx==3:
         shape_name="Triangle"
-    
+        
+    elif len_approx==4:
+        shape_name="Quadrilateral"
+        if cv2.isContourConvex(approx):
+            shape_name="Square"
+        else:
+            shape_name="Rectangle"
