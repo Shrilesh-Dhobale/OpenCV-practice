@@ -36,3 +36,5 @@ for contour in contours:
     x=approx.ravel()[0]
     y=approx.ravel()[1]-10
     cv2.putText(img,shape_name,(x,y),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,0,0),2)
+
+cv2.imshow("shapes",img)
