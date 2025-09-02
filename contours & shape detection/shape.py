@@ -26,4 +26,5 @@ for contour in contours:
     elif len_approx==5:
         shape_name="Pentagon"
 
-    
+    elif len_approx>5:
+        shape_name="Circle"
