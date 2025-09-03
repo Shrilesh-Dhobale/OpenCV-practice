@@ -13,3 +13,6 @@ while True:
     
     cv2.imshow("Face Detection",frame)
 
+    if cv2.waitKey(1) & 0xFF==ord('q'):
+        break
+
