@@ -23,4 +23,6 @@ while True:
         cv2.putText(frame,"Eyes Detected",(x,y-30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
 
     smiles=smile_cascade.detectMultiScale(roi_gray,1.7,22)
+    if len(smiles)>=0:
+        cv2.putText(frame,"Smiling",(x,y-60),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
     
