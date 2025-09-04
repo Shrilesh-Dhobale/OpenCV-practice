@@ -8,3 +8,4 @@ cap=cv2.VideoCapture(0)
 
 while True:
     rel, frame = cap.read()
+    gray=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)#Detect fast and accurate
