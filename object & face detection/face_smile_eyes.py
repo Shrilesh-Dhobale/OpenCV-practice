@@ -5,3 +5,6 @@ eye_cascade=cv2.CascadeClassifier("c:\\Users\\Shrilesh\\Desktop\\OpenCV practice
 smile_cascade=cv2.CascadeClassifier("c:\\Users\\Shrilesh\\Desktop\\OpenCV practice\\object & face detection\\haarcascade_smile.xml")
 
 cap=cv2.VideoCapture(0)
+
+while True:
+    rel, frame = cap.read()
