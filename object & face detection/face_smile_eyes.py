@@ -26,5 +26,7 @@ while True:
     if len(smiles)>=0:
         cv2.putText(frame,"Smiling",(x,y-10),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
 
+    cv2.imshow("Face Detection",frame)
+
     
     
