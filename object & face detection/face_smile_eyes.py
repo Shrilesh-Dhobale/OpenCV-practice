@@ -27,6 +27,8 @@ while True:
         cv2.putText(frame,"Smiling",(x,y-10),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
 
     cv2.imshow("Face Detection",frame)
+    if cv2.waitKey(1) & 0xFF==ord('q'):
+        break
 
     
     
