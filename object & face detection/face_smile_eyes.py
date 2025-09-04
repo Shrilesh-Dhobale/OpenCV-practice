@@ -16,3 +16,6 @@ while True:
         cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)
     roi_gray=gray[y:y+h,x:x+w]
     roi_color=frame[y:y+h,x:x+w]
+
+
+    eyes=eye_cascade.detectMultiScale(roi_gray,1.1,5)
