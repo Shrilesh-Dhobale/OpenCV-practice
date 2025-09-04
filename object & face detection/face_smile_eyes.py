@@ -1,1 +1,3 @@
 import cv2
+
+face_cascade=cv2.CascadeClassifier("c:\\Users\\Shrilesh\\Desktop\\OpenCV practice\\object & face detection\\haarcascade_frontalface_default.xml")
