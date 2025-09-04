@@ -19,3 +19,5 @@ while True:
 
 
     eyes=eye_cascade.detectMultiScale(roi_gray,1.1,5)
+    if len(eyes)>=0:
+        cv2.putText(frame,"Eyes Detected",(x,y-30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
